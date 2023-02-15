@@ -1,0 +1,27 @@
+<?php
+    $bil_awal = $_POST['bil_awal'];
+    $bil_akhir = $_POST['bil_akhir'];
+?>
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Bilangan awal</td>
+                    <td></td>
+                    <td><input type="number" name="bil_awal" value="<?php echo $bil_awal; ?>"></td>
+                </tr>
+                <tr>
+                    <td>Bilangan Akhir</td>
+                    <td></td>
+                    <td><input type="number" name="bil_akhir" value="<?php echo $bil_akhir; ?>"></td>
+                </tr>
+                <tr>
+                    <input type="submit" name="submit" value="Submit">
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
